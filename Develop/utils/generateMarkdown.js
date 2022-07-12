@@ -52,7 +52,7 @@ function generateMarkdown(data) {
   -[Description](#description)
   -[Installation](#installation)
   -[Usage](#usage)
-  -[Contributing](#contributing)
+  -[Contribute](#contribute)
   -[Tests](#tests)
   -[Credits](#credits)
   -[Features](#features)
@@ -64,8 +64,8 @@ function generateMarkdown(data) {
   ##Usage
   ${data.usage}
 
-  ##Contributing
-  ${data.contributing}
+  ##Contribute
+  ${data.contribute}
 
   ##Tests
   ${data.tests}
@@ -82,4 +82,7 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+
+
+module.exports = {
+  generateMarkdown};
