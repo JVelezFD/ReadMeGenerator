@@ -140,16 +140,14 @@ const questions = () =>{
 };
 
 // TODO: Create a function to write README file
+
 function writeToFile(fileName, data) {
-    return new Promise((resolve, reject) => {
-        FileSystem.writeFile( 'READ.md', generateMarkdown(data), (err)=>{
-            if (err) {
-              reject(err);
-              return;
-            }
-            resolve({yes: true, message: 'readme created'});
-          });
+    fs.writeFile('README/README.md', (data), err =>{
+        if (err){
+            console.error(err);
+        }
     })
+    
 }
 
 // TODO: Create a function to initialize app
@@ -161,3 +159,16 @@ function init() {
 
 // Function call to initialize app
 init();
+
+
+
+//return new Promise((resolve, reject) => {
+  //  fs.writeFile( 'Develop/README.md', questions(data), (err)=>{
+    //    if (err) {
+      //      console.log(err)
+        //  reject(err);
+          //return;
+       // }
+       // resolve({yes: true, message: 'readme created'});
+     // });
+//})
