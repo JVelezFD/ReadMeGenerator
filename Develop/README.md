@@ -13,12 +13,13 @@
   -[Credits](#credits)
   -[Features](#features)
   -[License](#license)
+  -[Questions](#questions)
 
   ##Installation
   To install this node app- you will have to clone this repo, install the node dependencies, and within node  run the index.js file 
 
   ##Usage
-  I've created this README usage video:
+  I've created this README usage video: https://watch.screencastify.com/v/MPrdOcxa9UByHbEHUPcc 
 
   ##Contribute
   None as of now may change in the future
