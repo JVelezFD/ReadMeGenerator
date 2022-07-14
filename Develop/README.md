@@ -28,7 +28,7 @@
   None
 
   ##Credits
-  undefined
+  none
 
   ##Features
   Reference the usage video above
