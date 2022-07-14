@@ -135,7 +135,34 @@ const questions = () =>{
                 }
             },
         },
-
+        //Q10- Questions
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your contact email',
+            validate: (nameInput)=>{
+                if(nameInput){
+                    return true; 
+                }else {
+                    console.log('Please enter your email address');
+                    return false;
+                }
+            },
+        },
+         //Q11- Questions
+         {
+            type: 'input',
+            name: 'github',
+            message: 'Enter your github username',
+            validate: (nameInput)=>{
+                if(nameInput){
+                    return true; 
+                }else {
+                    console.log('Please enter your github username');
+                    return false;
+                }
+            },
+        },
     ])
 };
 
@@ -163,13 +190,3 @@ init();
 
 
 
-//return new Promise((resolve, reject) => {
-  //  fs.writeFile( 'Develop/README.md', questions(data), (err)=>{
-    //    if (err) {
-      //      console.log(err)
-        //  reject(err);
-          //return;
-       // }
-       // resolve({yes: true, message: 'readme created'});
-     // });
-//})

@@ -79,6 +79,10 @@ function generateMarkdown(data) {
   ##License
   ${data.license}
 
+  ##Questions
+  If you have any questions email me @ ${data.email}
+  Check out my github profile to view other projects and this one at https://github/${data.github}
+
 `;
 }
 
